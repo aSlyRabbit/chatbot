@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'pixelFont';
+  src: url("./app/static/fusion-pixel-10px-monospaced-zh_hant.ttf");
+}
+
+.stElementContainer {
+    font-family: 'pixelFont';
+}
+
+.stMarkdown div,h3,*{
+  font-family: 'pixelFont';
+}
+
+.stMarkdown>div>div>h3{
+  font-family: 'pixelFont';
+}
+
+.stHeading>div>div>h1,.stHeading>div>h1{
+  font-family: 'pixelFont';
+}
+
+.stAppHeader {
+  background-color: #00000000;
+}
+
+.stAppViewContainer {
+    background: url("./app/static/background.png"),#00000000;
+    background-size: cover;
+}
+
+.stBottom > div {
+    background-color: transparent;
+}
+
+.stSidebar{
+    border: 0.1em solid #000;
+    flex-direction: column;
+    font-family: Inconsolata, Menlo, Chicago, Geneva;
+    margin: 1rem;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"]{
+  top: 200px;
+  border: 0.1em solid #56c861;
+  background-color: #09270066;
+  flex-direction: column;
+  margin: 1rem;
+  max-height: 500px;
+  min-height: 500px;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  color: #56c861;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"] p,
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"] h3,
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"] ol,
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"] ul,
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"] li{
+  color: #56c861;
+}
+
+div[data-testid="stHeadingWithActionElements"] h3{
+  color: #56c861;
+}
+
+.stMainBlockContainer .stHeading{
+  position:fixed;
+  top: 50px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.stImage{
+  position:fixed;
+  top: -200px;
+  transform: translateX(50%);
+  /* max-width: 320px; */
+  /* text-align: center;
+  font-size: 100px; */
+}
+
+.stMainBlockContainer>div>div>div[data-testid="stVerticalBlock"]::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.stVerticalBlock  button{
+  background: #fff;
+  border-image: url(button.svg) 30 stretch;
+  border-style: solid;
+  border-width: 5.5px;
+  color: #000;
+  cursor: pointer;
+  font-family: Chicago_12;
+  font-size: 18px;
+  min-height: 20px;
+  min-width: 59px;
+  text-align: center;
+  text-decoration: none;
+}
+.stSidebar button:active {
+  background: #000;
+  border-radius: 6px;
+  color: #fff;
+  font-family: Chicago_12;
+}
+.stSidebar button:disabled {
+  background: #fff;
+  border-image: url(button.svg) 30 stretch;
+  border-style: solid;
+  border-width: 5.5px;
+  color: #b6b7b8;
+  font-family: Chicago_12;
+  font-size: 18px;
+  min-height: 20px;
+  min-width: 59px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.stChatInput {
+  border: 1.5px solid #000;
+  font-size: 18px;
+  background: #000;
+  color: #fff;
+  font-family: 'pixelFont';
+  padding-left: 15PX;
+}
+
+.stChatInput textarea{
+  font-family: 'pixelFont';
+}

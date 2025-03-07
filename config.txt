@@ -1,0 +1,2 @@
+openai_api_key=31fe294a-7eca-41c1-908a-2046161109d2
+base_url=https://ark.cn-beijing.volces.com/api/v3
